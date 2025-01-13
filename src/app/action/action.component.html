@@ -1,0 +1,15 @@
+<div class="row">
+  @for (movie of movieList; track $index) {
+  <app-movie-card class="col-md-3">
+    <img poster [src]="movie.poster_path" class="h-100 object-fit-fill card-img-top w-100"
+      alt="Sonic the Hedgehog 3 Poster" />
+    <h5 cardTitle class="card-title text-center">{{movie.title?movie.title:movie.name}}</h5>
+    <p cardText class="card-text">
+      {{movie.overview}}
+    </p>
+    <span movieRelease> {{movie.release_date}}</span>
+    <span popular> {{movie.popularity}}</span>
+    <span rate> {{movie.vote_average}} ({{movie.vote_count}} votes)</span>
+  </app-movie-card>
+  }
+</div>

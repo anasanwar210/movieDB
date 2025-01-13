@@ -1,0 +1,27 @@
+<div class="inner">
+  <div class="card movie-card my-3">
+    <div class="poster">
+      <ng-content select=[poster]></ng-content>
+    </div>
+    <div class="card-body">
+      <ng-content select="[cardTitle]"></ng-content>
+      <ng-content select="[cardText]"></ng-content>
+      <p class="movie-info">
+        <strong>Release Date:</strong>
+        <ng-content select="[movieRelease]"></ng-content>
+      </p>
+      <p class="movie-info">
+        <strong>Popularity:</strong>
+        <ng-content select="[popular]"></ng-content>
+      </p>
+      <p class="movie-info">
+        <strong>Rating:</strong>
+        <span class="star">&#9733;</span>
+        <ng-content select="[rate]"></ng-content>
+      </p>
+      <div class="details text-center">
+        <a href="#" class="btn btn-primary">More Details</a>
+      </div>
+    </div>
+  </div>
+</div>

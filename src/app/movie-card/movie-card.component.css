@@ -1,0 +1,60 @@
+.movie-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card .card-title {
+  color: #16233e;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-info {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.star {
+  color: gold;
+}
+
+.btn-primary {
+  background-color: #ff8c00;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff6347;
+}
+
+.poster {
+  height: 250px;
+}
+
+.poster img {
+  height: 100%;
+  object-fit: fill;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
